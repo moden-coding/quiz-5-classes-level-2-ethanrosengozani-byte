@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class App {
         public static void main(String[] args) {
                 System.out.println("=== ArcadeGameCredit Quiz Tester ===\n");
@@ -64,22 +65,22 @@ public class App {
                 // -----------------------------
                 // A+ LEVEL: getTotalCreditsUsed()
                 // -----------------------------
-                // System.out.println("--- A+ LEVEL TESTS (getTotalCreditsUsed) ---");
-                // ArcadeGameCredit gameD = new ArcadeGameCredit("Shooting Game", 15, 5);
+                System.out.println("--- A+ LEVEL TESTS (getTotalCreditsUsed) ---");
+                ArcadeGameCredit gameD = new ArcadeGameCredit("Shooting Game", 15, 5);
 
-                // System.out.println("Initial gameD:");
-                // System.out.println(gameD);
+                System.out.println("Initial gameD:");
+                System.out.println(gameD);
 
-                // System.out.println("\nPlaying gameD twice...");
-                // gameD.playOnce(); // 15 -> 10
-                // gameD.playOnce(); // 10 -> 5
-                // System.out.println("After 2 plays, gameD:");
-                // System.out.println(gameD);
+                System.out.println("\nPlaying gameD twice...");
+                gameD.playOnce(); // 15 -> 10
+                gameD.playOnce(); // 10 -> 5
+                System.out.println("After 2 plays, gameD:");
+                System.out.println(gameD);
 
-                // int totalUsed = gameD.getTotalCreditsUsed();
-                // System.out.println("\nGameD getTotalCreditsUsed() returned: " + totalUsed);
-                // System.out.println(
-                //                 "Expected total credits used: 2 * 5 = 10 (if playsCompleted and costPerPlay are correct).");
+                int totalUsed = gameD.getTotalCreditsUsed();
+                System.out.println("\nGameD getTotalCreditsUsed() returned: " + totalUsed);
+                System.out.println(
+                                "Expected total credits used: 2 * 5 = 10 (if playsCompleted and costPerPlay are correct).");
 
 
         }
